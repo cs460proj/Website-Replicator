@@ -10,3 +10,7 @@ This project will download images and host them locally, it will reformat POST r
 This acts as a somewhat man-in-the-middle attack by replicating a site. Instead of being a traditional man in the middle, this is more of a proxy that can be deployed in a sort of phishing attack. Due to the nature of the web, replicating any site can be extremely difficult, especially those with Javascript.
 
 Due to this being a proof of concept, it doesn't attempt to match any site 1:1, but it will replicate, in some respect, many sites semi-closely as long as they don't use Javascript to gate content (like Instagram). This will also print out destination links (by the nature of Bottle request print-outs), prints out resource downloads (CSS and images), and it will print out all form data that is sent with a POST request.
+
+Replicating nearly any website as one would imagine causes a lot of problems. Much of the time on this project was spent fixing obscure issues with HTTP requests, resource downloading, replication, etc.
+
+A few tested sites include Twitter, Google, Yandex, Facebook.
